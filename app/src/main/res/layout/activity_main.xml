@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Radio"/>
+    <RadioGroup
+        android:id="@+id/rdg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radio 1"
+            android:checked="true"
+            android:id="@+id/rdo1" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radio 2"
+            android:id="@+id/rdo2" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radio 3"
+            android:id="@+id/rdo3" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radio 4"
+            android:id="@+id/rdo4" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radio 5"
+            android:id="@+id/rdo5" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Check Box"/>
+    <LinearLayout
+        android:id="@+id/chkGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chk1"
+            android:text="Check Box 1"/>
+
+        <CheckBox
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chk2"
+            android:text="Check Box 2"/>
+        <CheckBox
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chk3"
+            android:background="@drawable/button_border"
+            android:text="Check Box 3"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Spinner"/>
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinner_item" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Switch and Toggle"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch 1"
+            />
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch 2"
+            />
+
+        <ToggleButton
+            android:id="@+id/toggle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="toggle 1"
+            />
+
+        <ToggleButton
+            android:id="@+id/toggle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="toggle 2"
+            />
+
+    </GridLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open List Activity"
+        android:textColor="#000"
+        android:background="@drawable/ripple"
+        />
+
+
+</LinearLayout>
