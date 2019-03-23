@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -73,8 +74,10 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
                 public void onClick(View v) {
                     try{
                         Toast.makeText(context,obj.getString("name"),Toast.LENGTH_LONG).show();
-                    }catch (Exception e){
 
+                        ((RecyclerViewActivity)context).commitFragment(obj.getString("name"));
+                    }catch (Exception e){
+                        Log.e("---->",e.getMessage()+"<--------");
                     }
 
                 }

@@ -136,6 +136,7 @@
         android:layout_height="wrap_content"
         android:text="Open List Activity"
         android:textColor="#000"
+        android:id="@+id/btnSet"
         android:background="@drawable/ripple"
         />
 

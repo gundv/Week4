@@ -4,6 +4,8 @@ import android.content.Context;
 import android.graphics.Rect;
 import android.support.annotation.DimenRes;
 import android.support.annotation.NonNull;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -22,6 +24,35 @@ public class RecyclerViewActivity extends AppCompatActivity {
 
     // the item that will render in the list as View
     JSONArray arr=new JSONArray();
+
+
+
+    public FragmentText createFragment(){
+        FragmentText fragmentText= new FragmentText();
+
+        return fragmentText;
+    }
+
+    public void commitFragment(String text){
+        FragmentManager manager= getSupportFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        FragmentText fragmentText = createFragment();
+
+        transaction.replace(R.id.container,fragmentText);
+        transaction.addToBackStack(null);
+        transaction.commit();
+
+
+        //getSupportFragmentManager()
+        //                .beginTransaction()
+        //                .replace(R.id.container,fragmentText)
+        //                .commit();
+
+        transaction.remove(fragmentText);
+
+        fragmentText.setText(text);
+
+    }
 
 
     @Override
@@ -56,8 +87,6 @@ public class RecyclerViewActivity extends AppCompatActivity {
 
 
             rv.setAdapter(adapter);
-
-
 
 
 
