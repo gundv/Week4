@@ -7,19 +7,30 @@
     android:orientation="vertical"
     tools:context=".ActivitySelector">
 
-    <Button
-        android:id="@+id/sp"
+    <ImageView
+        android:id="@+id/htmlView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Shared Preference and Switch"/>
-    <Button
-        android:id="@+id/sf"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/reposnseString"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Save File"/>
-    <Button
-        android:id="@+id/rv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RecyclerView"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <!--<Button-->
+        <!--android:id="@+id/sp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Shared Preference and Switch"/>-->
+    <!--<Button-->
+        <!--android:id="@+id/sf"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Save File"/>-->
+    <!--<Button-->
+        <!--android:id="@+id/rv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="RecyclerView"/>-->
 </LinearLayout>
